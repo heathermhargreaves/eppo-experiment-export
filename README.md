@@ -44,11 +44,11 @@ node export-experiment.js <experiment-id>
 
 **Examples:**
 ```bash
-# Export experiment 95469
-node export-experiment.js 95469
+# Export experiment 12345
+node export-experiment.js 12345
 
 # Or using npm script
-npm run export -- 95469
+npm run export -- 12345
 ```
 
 ## Output
@@ -100,7 +100,7 @@ The script generates a CSV file with the following columns:
 
 The CSV file will be named: `experiment_{ID}_metrics_{timestamp}.csv`
 
-Example: `experiment_95469_metrics_2024-01-15T10-30-45-123Z.csv`
+Example: `experiment_12345_metrics_2024-01-15T10-30-45-123Z.csv`
 
 ## Sample Output
 
@@ -127,8 +127,8 @@ When you run the export, you'll see:
   ...
 }
 
-✅ Successfully exported 10 metric rows to: experiment_95469_metrics_2024-01-15T10-30-45-123Z.csv
-📁 File location: /path/to/experiment_95469_metrics_2024-01-15T10-30-45-123Z.csv
+✅ Successfully exported 10 metric rows to: experiment_12345_metrics_2024-01-15T10-30-45-123Z.csv
+📁 File location: /path/to/experiment_12345_metrics_2024-01-15T10-30-45-123Z.csv
 
 📊 Export Summary:
    • Metrics: 5 (Checkout Conversion Funnel, Add to Cart Rate, Session Duration, Purchase Conversion, Revenue Per User)
@@ -210,22 +210,22 @@ This will show:
 
 ### Basic Export
 ```bash
-node export-experiment.js 95469
+node export-experiment.js 12345
 ```
 
 ### Export with Environment Variable
 ```bash
-EPPO_API_KEY=your_key_here node export-experiment.js 95469
+EPPO_API_KEY=your_key_here node export-experiment.js 12345
 ```
 
 ### Using npm script
 ```bash
-npm run export -- 95469
+npm run export -- 12345
 ```
 
 ### Debug Mode
 ```bash
-node debug-experiment.js 95469
+node debug-experiment.js 12345
 ```
 
 The script will output detailed progress information, fetch actual metric names from the API, and create a comprehensive CSV file with all experiment metrics data organized by variation. 
