@@ -1,0 +1,20 @@
+{
+  "name": "eppo-experiment-export",
+  "version": "1.0.0",
+  "description": "Export Eppo experiment metrics to CSV",
+  "main": "export-experiment.js",
+  "scripts": {
+    "start": "node export-experiment.js",
+    "export": "node export-experiment.js",
+    "setup": "node setup.js",
+    "test": "node test-connection.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+} 
